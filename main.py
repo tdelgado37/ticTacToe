@@ -1,4 +1,5 @@
-import board
+import player
+from board import Board
 
 def play(input = "Y"):
     if(input is None):

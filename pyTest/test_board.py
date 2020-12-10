@@ -1,5 +1,4 @@
 import sys
-from sys import stderr
 
 sys.path.insert(1,'Users\tdelg\vsWorkBench\ticTacToe\board.py')
 
@@ -23,3 +22,8 @@ def test_board_markingTopL():
 def test_board_display():
     output = board.display()
     assert output == 'X| | \n-----\n | | \n-----\n | | '
+
+def test_board_clear():
+    output = board.clear()
+
+    assert output == ' | | \n-----\n | | \n-----\n | | '
