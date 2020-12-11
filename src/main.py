@@ -1,5 +1,5 @@
-import player
-from board import Board
+import src.player as player
+import src.board as board
 
 def play(input = "Y"):
     if(input is None):
@@ -9,7 +9,7 @@ def play(input = "Y"):
     return wantToPlay == "Y"
 def main():
     play()
-    Board()
+    board.Board()
 
 
 if __name__ == "__main__":

@@ -1,14 +1,10 @@
-import sys
-
-sys.path.insert(1,'Users\tdelg\vsWorkBench\ticTacToe\main.py')
-
-from main import play
+import src.main as main
 
 def test_play_Y():
-    wantToPlay = play("Y")
+    wantToPlay = main.play("Y")
     assert wantToPlay
 
 def test_play_N():
-    wantToPlay = play("N")
+    wantToPlay = main.play("N")
     assert not wantToPlay
 

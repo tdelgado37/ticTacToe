@@ -1,10 +1,6 @@
-import sys
+import src.board as board
 
-sys.path.insert(1,'Users\tdelg\vsWorkBench\ticTacToe\board.py')
-
-from board import Board
-
-board = Board()
+board = board.Board()
 
 def test_board_created():
     
