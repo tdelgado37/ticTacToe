@@ -1,7 +1,7 @@
 import src.player as player
 import src.board as board
 
-player1 = player.Player()
+player1 = player.Player("X")
 board = board.Board()
 
 
