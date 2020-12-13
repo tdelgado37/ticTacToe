@@ -19,6 +19,11 @@ def test_board_display():
     output = board.display()
     assert output == 'X| | \n-----\n | | \n-----\n | | '
 
+def test_board_markingInvaild():
+    board.mark("topleft", "O")
+    output = board.display()
+    assert output == 'X| | \n-----\n | | \n-----\n | | '
+
 def test_board_clear():
     output = board.clear()
 

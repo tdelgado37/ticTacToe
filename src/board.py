@@ -5,9 +5,12 @@ class Board:
             "MiddleL": " ", "MiddleM":" ", "MiddleR":" ",
             "BottomL": " ", "BottomM":" ", "BottomR": " "}
 
+    #TODO: add in logic to handle invalid positions on the board
     def mark(self, slotKey, marking):
-        newValue = {slotKey: marking}
-        self.slots.update(newValue)
+        if(slotKey not in self.slots.keys()):
+            print(slotKey + " invaild position...LOSE turn!")
+        else:
+            self.slots[slotKey] = marking
     
     def display(self) -> str:
         topLine = self.slots.get("TopL")+"|"+self.slots.get("TopM")+"|"+self.slots.get("TopR")

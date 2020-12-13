@@ -1,5 +1,5 @@
-import player as player
-import board as board
+import src.player as player
+import src.board as board
 
 def play(input = "Y"):
     if(input is None):
@@ -8,6 +8,7 @@ def play(input = "Y"):
         wantToPlay = input
     return wantToPlay == "Y"
 
+#TODO: see if there are better ways to solve for this current have n^2 time
 def checkForWinner(turnsTaken,gameBoard):
     win = False
     winner = ""
